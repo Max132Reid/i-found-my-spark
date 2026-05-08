@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Found My Spark — Story Bible</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0a0a0a; color: #e8e8e8; font-family: Georgia, serif; padding: 24px 20px 60px; max-width: 680px; margin: 0 auto; }
+  .hero { border-left: 3px solid #e8e8e8; padding-left: 20px; margin-bottom: 40px; margin-top: 20px; }
+  .hero-title { font-size: 30px; font-weight: 400; color: #ffffff; line-height: 1.2; letter-spacing: -0.5px; }
+  .hero-title span { font-size: 18px; color: #888; display: block; margin-top: 4px; }
+  .hero-sub { font-size: 12px; color: #555; margin-top: 10px; font-family: 'Courier New', monospace; }
+  .hero-feeling { font-size: 13px; color: #777; margin-top: 14px; font-style: italic; border-left: 2px solid #333; padding-left: 12px; line-height: 1.6; }
+  .section-label { font-size: 10px; font-family: 'Courier New', monospace; letter-spacing: 2px; color: #444; text-transform: uppercase; margin-bottom: 14px; }
+  .section { margin-bottom: 32px; }
+  .quote-block { font-size: 16px; font-style: italic; color: #ccc; border-left: 3px solid #e8e8e8; padding-left: 16px; margin: 12px 0; line-height: 1.8; }
+  .bookend { display: flex; align-items: center; gap: 16px; padding: 14px 16px; background: #111; border-radius: 8px; margin-bottom: 8px; border: 1px solid #1e1e1e; }
+  .bookend-text { font-size: 14px; color: #e8e8e8; font-weight: 400; }
+  .bookend-sub { font-size: 11px; color: #555; margin-top: 3px; font-family: 'Courier New', monospace; }
+  .arrow { font-size: 16px; color: #444; }
+  .divider { border: none; border-top: 1px solid #1a1a1a; margin: 28px 0; }
+  .card { background: #0f0f0f; border: 1px solid #1e1e1e; border-radius: 10px; padding: 16px 18px; margin-bottom: 10px; cursor: pointer; }
+  .card:active { background: #141414; }
+  .card-header { display: flex; align-items: center; justify-content: space-between; }
+  .card-title { font-size: 15px; color: #e8e8e8; font-family: Georgia, serif; }
+  .act-num { font-size: 11px; color: #444; margin-right: 8px; font-family: 'Courier New', monospace; }
+  .card-tag { font-size: 10px; color: #555; background: #151515; padding: 3px 8px; border-radius: 20px; border: 1px solid #222; font-family: 'Courier New', monospace; }
+  .chevron { font-size: 11px; color: #444; transition: transform 0.2s; display: inline-block; }
+  .chevron.open { transform: rotate(180deg); }
+  .card-body { font-size: 13px; color: #888; line-height: 1.7; margin-top: 14px; display: none; }
+  .card-body.open { display: block; }
+  .card-body p { margin-bottom: 10px; }
+  .script-block { background: #0a0a0a; border-radius: 8px; padding: 16px; margin-top: 12px; border: 1px solid #1a1a1a; }
+  .visual { color: #444; font-style: italic; font-size: 11px; margin-bottom: 6px; font-family: 'Courier New', monospace; line-height: 1.5; }
+  .line { color: #d8d8d8; font-size: 14px; padding-left: 10px; border-left: 2px solid #222; margin-bottom: 8px; line-height: 1.7; font-family: Georgia, serif; }
+  .pause { color: #3a3a3a; font-size: 11px; font-style: italic; padding-left: 10px; margin-bottom: 10px; font-family: 'Courier New', monospace; }
+  .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag { font-size: 10px; padding: 3px 10px; border-radius: 20px; border: 1px solid #222; color: #555; background: #0a0a0a; font-family: 'Courier New', monospace; }
+  .capture-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid #141414; }
+  .capture-item:last-child { border-bottom: none; }
+  .capture-dot { width: 5px; height: 5px; border-radius: 50%; background: #333; margin-top: 7px; flex-shrink: 0; }
+  .capture-text { font-size: 13px; color: #777; line-height: 1.6; }
+  .capture-text strong { color: #bbb; font-weight: 400; }
+  .hint { font-size: 11px; color: #444; margin-top: 6px; font-family: 'Courier New', monospace; }
+  .unfinished { background: #0d0d0a; border: 1px solid #2a2a1a; border-radius: 10px; padding: 16px 18px; margin-bottom: 10px; cursor: pointer; }
+  .unfinished .card-title { color: #a8a870; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-title">
+    I Lost My Spark
+    <span>— I Found My Spark</span>
+  </div>
+  <div class="hero-sub">SHORT FILM · ~10 MIN · MAX REID · 2025–2026</div>
+  <div class="hero-feeling">Target feeling: mellow, bittersweet. The audience is sad when it ends. They love you through your struggle.</div>
+</div>
+
+<div class="section">
+  <div class="section-label">The anchor line</div>
+  <div class="quote-block">"The more connected I was, the less I was living."</div>
+</div>
+
+<div class="section">
+  <div class="section-label">Bookend structure</div>
+  <div class="bookend">
+    <div><div class="bookend-text">I Lost My Spark</div><div class="bookend-sub">Opening title card</div></div>
+    <div class="arrow">→</div>
+    <div><div class="bookend-text">I Found My Spark</div><div class="bookend-sub">Closing title card</div></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <div class="section-label">Full script — tap each act</div>
+  <div class="hint">Every word is yours. Just framed.</div><br>
+
+  <div class="card" onclick="toggle(this)">
+    <div class="card-header">
+      <div class="card-title"><span class="act-num">00</span>Prologue — the cycle</div>
+      <div style="display:flex;align-items:center;gap:8px"><div class="card-tag">wordless</div><span class="chevron">▼</span></div>
+    </div>
+    <div class="card-body">
+      <p>No voiceover. No words. Just the rhythm of your life shown visually. Day — busy, movement, noise. Night — collapse, crying, slow music. Day again. Night again. Each loop slightly heavier than the last.</p>
+      <p>The mirror glitch lives here. Happy Max smiling. Glitch. Dark Max in the same position. Flicker back and forth. The film's entire conflict in one shot. The audience feels trapped in the cycle before you say a single word.</p>
+      <div class="tag-row"><span class="tag">no dialogue</span><span class="tag">slow music builds</span><span class="tag">mirror glitch</span><span class="tag">day/night cycle</span></div>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <div class="card-header">
+      <div class="card-title"><span class="act-num">01</span>Act 1 — the fog</div>
+      <div style="display:flex;align-items:center;gap:8px"><div class="card-tag">voiceover begins</div><span class="chevron">▼</span></div>
+    </div>
+    <div class="card-body">
+      <div class="script-block">
+        <div class="visual">[VISUAL: Baby sleeping peacefully. Cut to — teenage Max, phone in hand, 2am.]</div>
+        <div class="line">I used to be a kid who smiled.</div>
+        <div class="visual">[VISUAL: Kid running, moving, always going somewhere.]</div>
+        <div class="line">Always moving. Not running away from anything. Just always moving.</div>
+        <div class="visual">[VISUAL: Baby not crying. Content. Still. Cut to — teenager crying in bed alone.]</div>
+        <div class="line">My mum said I was the perfect baby. Wouldn't cry at night.</div>
+        <div class="visual">[VISUAL: Baby sleeping instantly. Cut to — phone screen lighting up a face in the dark.]</div>
+        <div class="line">I'd sleep right away.</div>
+        <div class="visual">[VISUAL: Young Max happy, carefree. Cut to — older Max staring up at the sky. Frustrated. Empty.]</div>
+        <div class="line">I didn't complain.</div>
+        <div class="visual">[VISUAL: Kid running, laughing, moving. Cut to — Max and his mum. Dark room. Muffled. Silhouettes. Someone crying. A figure moving closer.]</div>
+        <div class="line">I just kept pushing.</div>
+        <div class="pause">[Long silence. Music underneath. No words.]</div>
+        <div class="visual">[VISUAL: Hands drawing. Then still. A book open. Then closed. A pool. Empty. A smile in an old photo.]</div>
+        <div class="line">I used to draw.</div>
+        <div class="line">I used to read.</div>
+        <div class="line">I used to play music.</div>
+        <div class="line">I used to run.</div>
+        <div class="line">I used to swim.</div>
+        <div class="line">I used to smile.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="line">You could say...</div>
+        <div class="visual">[Cut to black.]</div>
+        <div class="line">I lost my spark.</div>
+      </div>
+      <div class="tag-row"><span class="tag">voiceover starts</span><span class="tag">baby cutbacks</span><span class="tag">couch flashback</span><span class="tag">creative kid era</span></div>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <div class="card-header">
+      <div class="card-title"><span class="act-num">02</span>Act 2 — the trap</div>
+      <div style="display:flex;align-items:center;gap:8px"><div class="card-tag">the numbers</div><span class="chevron">▼</span></div>
+    </div>
+    <div class="card-body">
+      <div class="script-block">
+        <div class="visual">[VISUAL: Max sitting. Still. Staring at nothing. The world slightly out of focus.]</div>
+        <div class="line">I don't remember what it felt like back then. It was all a blur.</div>
+        <div class="line">Sitting here and looking back, I don't remember much as a kid.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="visual">[VISUAL: Hands reaching for a phone. Again. Again. Again.]</div>
+        <div class="line">I used to spend my time wanting my phone. Needing stimulation. Needing something to be on my phone when I opened it.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="line">Something was never there.</div>
+        <div class="line">So I'd open it again.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="visual">[VISUAL: 24 second day sequence. Each second one hour. Clinical. Unforgiving.]</div>
+        <div class="pause">1 sec — sleeping · 1 sec — phone · 1 sec — getting ready · 6 secs — school · 1 sec — phone on bus · 1 sec — phone and food · 1 sec — food and work · 1 sec — lying around · 1 sec — not much · 2 secs — shower, bed · 3 secs — doom scrolling, dark room, face lit by screen</div>
+        <div class="pause">[Sequence ends. Silence.]</div>
+        <div class="line">That was my day.</div>
+        <div class="line">Every day.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="visual">[VISUAL: Mum in another room. Max on phone. She looks over. He doesn't.]</div>
+        <div class="line">I would look forward to being on my phone, rather than enjoying the time, with the people who had not much time left.</div>
+        <div class="pause">[Long pause. Music underneath.]</div>
+        <div class="visual">[VISUAL: A car. Driving. Roads passing.]</div>
+        <div class="line">Eight to ten hours a day.</div>
+        <div class="line">Fifty six hours a week.</div>
+        <div class="line">In Australia you need a hundred and twenty hours to get your licence.</div>
+        <div class="line">I could have done that thirty times.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="line">The main thing I remember was brain fog.</div>
+        <div class="line">Max wasn't Max anymore.</div>
+        <div class="line">I wasn't myself.</div>
+      </div>
+      <div class="tag-row"><span class="tag">24-second day sequence</span><span class="tag">the numbers</span><span class="tag">brain fog</span><span class="tag">show don't tell</span></div>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <div class="card-header">
+      <div class="card-title"><span class="act-num">03</span>Act 3 — going ghost</div>
+      <div style="display:flex;align-items:center;gap:8px"><div class="card-tag">the turn</div><span class="chevron">▼</span></div>
+    </div>
+    <div class="card-body">
+      <div class="script-block">
+        <div class="visual">[VISUAL: Max walking. Moving. Early morning. Alone.]</div>
+        <div class="line">You can't get better if you don't know what's wrong.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="line">So I started to find peace.</div>
+        <div class="line">Listen to positive things.</div>
+        <div class="line">Get moving more.</div>
+        <div class="line">Eat better foods.</div>
+        <div class="visual">[VISUAL: Small quiet moments. Food being made. Feet moving. Sun coming up.]</div>
+        <div class="line">And I noticed a change.</div>
+        <div class="line">Not just a change in how I felt.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="line">A change in who I was.</div>
+        <div class="visual">[VISUAL: Brief flash — Act 4 Max. Smiling. Still. Then cut back.]</div>
+        <div class="pause">[Voiceover, quieter, almost to himself.]</div>
+        <div class="line">Max...</div>
+        <div class="line">I'm Max again.</div>
+        <div class="pause">[Beat.]</div>
+        <div class="line">Not yet though.</div>
+        <div class="visual">[VISUAL: Back to present. Max sitting. Still figuring it out.]</div>
+        <div class="line">So after relaxing. Not taking anything too serious.</div>
+        <div class="line">I came to the conclusion.</div>
+        <div class="line">I needed to delete all social media.</div>
+        <div class="visual">[VISUAL: Phone screen. Apps being deleted. One by one.]</div>
+        <div class="line">With the phone in my hand I would always be looking down.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="line">I had a problem. I needed a solution.</div>
+        <div class="line">How do you fix something that most of the world has a problem with?</div>
+        <div class="line">Something manufactured to keep you hooked.</div>
+        <div class="line">How do you break the chain of a lifelong problem?</div>
+        <div class="pause">[Pause.]</div>
+        <div class="line">Just get rid of it.</div>
+        <div class="visual">[VISUAL: Laptop open. TikTok loading. TV on. The same loop starting again.]</div>
+        <div class="line">But if you take a drug off a drug addict, they're just gonna find a way around it.</div>
+        <div class="line">And I was an addict.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="line">I was a kid in a lolly shop.</div>
+        <div class="line">I couldn't help myself.</div>
+      </div>
+      <div class="tag-row"><span class="tag">the decision</span><span class="tag">flash forward</span><span class="tag">lolly shop line</span><span class="tag">foreshadow</span></div>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggle(this)">
+    <div class="card-header">
+      <div class="card-title"><span class="act-num">04</span>Act 4 — the other side</div>
+      <div style="display:flex;align-items:center;gap:8px"><div class="card-tag">bittersweet ending</div><span class="chevron">▼</span></div>
+    </div>
+    <div class="card-body">
+      <div class="script-block">
+        <div class="visual">[VISUAL: Max. Morning. Gets out of bed. Slow. Deliberate.]</div>
+        <div class="line">I smile.</div>
+        <div class="line">I still have a long way to go.</div>
+        <div class="line">But the ball is rolling.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="visual">[VISUAL: Max eating. Moving. Outside. Simple quiet moments.]</div>
+        <div class="line">I'm the happiest I've been.</div>
+        <div class="line">I'm learning something every single day.</div>
+        <div class="line">I open myself to everything.</div>
+        <div class="line">And just let the world show me what I need to see.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="visual">[VISUAL: A hard morning. Max sitting. Still. Working through it.]</div>
+        <div class="line">Sometimes things are tough.</div>
+        <div class="line">But that's never a reason to beat yourself down.</div>
+        <div class="line">I have tough moments every morning.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="line">But do I let that ruin my day?</div>
+        <div class="visual">[VISUAL: Max getting out of bed anyway. Moving anyway. Smiling anyway.]</div>
+        <div class="line">I get out of bed because I want it.</div>
+        <div class="line">I smile and laugh because I want it.</div>
+        <div class="line">I eat better and move more because I want it.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="line">The things that drag you down...</div>
+        <div class="line">are as easy to cut off...</div>
+        <div class="line">as they are to pick up.</div>
+        <div class="pause">[Long pause. Let that land.]</div>
+        <div class="line">It is easy.</div>
+        <div class="line">But it takes time.</div>
+        <div class="line">Time you have to be willing to spend.</div>
+        <div class="line">Time you have to work.</div>
+        <div class="line">Nothing good is easy.</div>
+        <div class="visual">[VISUAL: School captain. Awards. People. Places. Moments earned.]</div>
+        <div class="line">I'm so grateful for every opportunity I have.</div>
+        <div class="line">If I didn't get up.</div>
+        <div class="line">If I didn't move.</div>
+        <div class="line">I wouldn't be where I am.</div>
+        <div class="pause">[Pause.]</div>
+        <div class="visual">[VISUAL: Dark room. Muffled audio. Two silhouettes. A mother and her son. Moving closer. The conversation finally shown. No words needed.]</div>
+        <div class="line">I wouldn't have become who I am.</div>
+        <div class="pause">[Long silence. Just the music.]</div>
+        <div class="line">And I love who I am.</div>
+        <div class="visual">[VISUAL: The mirror. Same mirror as the prologue. Max stands in front of it. No glitch. No flicker. Just him. Still.]</div>
+        <div class="pause">[Cut to black.]</div>
+        <div class="pause">[Title card — white text on black.]</div>
+        <div class="line">I Found My Spark.</div>
+      </div>
+      <div class="tag-row"><span class="tag">mum scene revealed</span><span class="tag">mirror bookend</span><span class="tag">no glitch</span><span class="tag">I found my spark</span></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <div class="section-label">Shot capture list — film over 12 months</div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>Mirror glitch</strong> — happy Max / dark Max, same position, same light. Film both versions separately, edit the flicker in post.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>Baby footage</strong> — find old home videos or photos. Baby sleeping, baby not crying, baby content. The contrast shots depend on this.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>Couch flashback</strong> — same couch, same position. One shot drawing or writing. One shot on phone. Match the framing exactly.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>24-second day sequence</strong> — 1 second per hour. Sleep, phone, school, bus, food, lying around, doom scrolling. Shoot each hour as a distinct clip.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>Chest cam world shot</strong> — camera strapped to chest, turning slowly in a busy place. You in focus, background in motion blur. Everyone on their phones.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>The morning</strong> — phone on nightstand. Eyes open. Hand reaches for it before anything else. Screen lighting up your face.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>Looking up at the sky</strong> — frustrated. Empty. Just you and the sky. Hold it longer than feels comfortable.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>The mum scene</strong> — dark room, muffled audio, silhouettes, two figures, one moving closer. Film this when it feels right. Don't force it.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>The quiet</strong> — you sitting somewhere with no phone. Just existing. Let it breathe longer than feels comfortable.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>Making something again</strong> — hands drawing, writing, building. The spark returning. This shot might not exist until late in the year.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>School captain / awards / people / places</strong> — capture these as they happen naturally. Don't stage them.</div></div>
+  <div class="capture-item"><div class="capture-dot"></div><div class="capture-text"><strong>Final mirror</strong> — same mirror as prologue. No glitch. Just you. Hold it longer than you think you need to.</div></div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <div class="section-label">Unfinished — return to this</div>
+  <div class="unfinished" onclick="toggle(this)">
+    <div class="card-header">
+      <div class="card-title">The hook — raw rap version of "I used to"</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <p>You want to turn the "I used to" list into a short raw rap hook. Slow, mellow, spoken word feel.</p>
+      <p>You already have the collapse line: "Just when I realised I was shrinking, knowing I lost my spark."</p>
+      <p>Don't force it. When it comes, write it down immediately wherever you are.</p>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <div class="section-label">Tone and music</div>
+  <div class="card" onclick="toggle(this)">
+    <div class="card-header">
+      <div class="card-title">Overall tone</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <p>Quiet and intimate. Like talking to one person at 2am. Not motivational, not preachy. Cinematic and emotional. Short sentences with room to breathe. Long silences are not empty — they are part of the film. The audience should forget they're watching content.</p>
+    </div>
+  </div>
+  <div class="card" onclick="toggle(this)">
+    <div class="card-header">
+      <div class="card-title">Music direction</div>
+      <span class="chevron">▼</span>
+    </div>
+    <div class="card-body">
+      <p>Consider scoring this yourself under oncefinn. Deep, slow, mellow. The music should feel like it's coming from inside the film not playing over it.</p>
+      <p>Prologue: slow build, almost no melody. Act 2 low point: the heaviest moment, let music say what words don't. Act 4 ending: something that feels like exhaling. Bittersweet not triumphant.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggle(card) {
+  const body = card.querySelector('.card-body');
+  const chevron = card.querySelector('.chevron');
+  body.classList.toggle('open');
+  chevron.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
